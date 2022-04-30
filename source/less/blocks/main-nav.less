@@ -1,0 +1,102 @@
+.main-nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    background-color: @white;
+    
+    &.main-nav--closed {
+        position: relative;
+
+        & .main-nav__wrapper {
+            display: none;
+        }
+
+        & .main-nav__toggle {
+            background-color: @main;
+            background-image: url("../img/menu-btn.svg");
+            top: 0;
+            right: 0;
+        
+            &:hover {
+                background-color: @hover;
+            }
+
+            &:focus {
+                background-color: @main;
+            }
+
+        }
+    }
+
+    &__toggle {
+        position: absolute;
+        z-index: 10;
+        width: 50px;
+        height: 50px;
+        border: none;
+        display: block;
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url("../img/close.svg");
+        background-color: transparent;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+        
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin-top: 134px;
+    }
+
+    &__item {
+        padding: 17px 35px 17px 16px;
+        margin-bottom: 30px;
+        text-align: left;
+        position: relative;
+        background-color: @background_light;
+        height: 60px;
+        box-sizing: border-box;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 8px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url("../img/arrow_list.svg");
+            right: 24px;
+            top: calc(50% - 4px);
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: @nav_item_color;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+
+
+
+
+

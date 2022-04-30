@@ -1,0 +1,97 @@
+.section-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+
+    @media (min-width: @desktop-width) {
+        align-items: flex-start;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        color: @dark;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        text-align: center;
+
+        @media (min-width: @tablet-width) {
+            font-size: 30px;
+        }
+
+        @media (min-width: @desktop-width) {
+            max-width: 360px;
+            margin-right: auto;
+            padding-bottom: 20px;
+            font-size: 55px;
+            line-height: 90px;
+            letter-spacing: -1.245px;
+            text-align: left;
+            position: relative;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 175px;
+                height: 4px;
+                background-color: @main;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+    
+    &__description {
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 170%;
+        color: @text_light;
+        letter-spacing: -0.466667px;
+
+        @media (min-width: @tablet-width) {
+            line-height: 28px;
+        }
+
+        @media (min-width: @desktop-width) {
+            text-align: left;
+            line-height: 28px;
+            margin-bottom: 50px;
+        }   
+    }
+
+    &__btn {
+        @media (min-width: @tablet-width) {
+            max-width: 250px;
+        }
+    }
+
+    &.section-description--main {
+        
+        @media (min-width: @desktop-width) {
+            margin-right: auto;
+        }
+
+        & .section-description__title {
+            @media (min-width: @desktop-width) {
+                padding-bottom: 30px;
+                line-height: 80px;
+                
+                &::after {
+                    width: 230px;
+                }
+            }
+        }
+    }
+
+    &__call {
+        @media (min-width: @tablet-width) {
+            margin-top: 10px;
+        }
+    }
+}
+

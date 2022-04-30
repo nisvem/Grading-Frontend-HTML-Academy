@@ -1,0 +1,32 @@
+.country {
+    display: flex;
+    flex-direction: column;
+
+
+
+    @media (min-width: @desktop-width) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 900px;
+    }
+
+    &__text {
+        padding: 24px 16px 30px;
+
+        @media (min-width: @tablet-width) {
+            padding: 30px 21px 10px;
+        }
+
+        @media (min-width: @desktop-width) {
+            max-width: 370px;
+            padding: 0;
+        }
+    
+
+    }
+
+    & .section-description__description {
+        letter-spacing: -0.466667px;
+    }
+}

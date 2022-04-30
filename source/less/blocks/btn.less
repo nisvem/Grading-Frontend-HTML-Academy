@@ -1,0 +1,61 @@
+.btn {
+  display: block;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 500;
+  text-align: center;
+  color: @white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: none;
+  background-color: @main;
+  letter-spacing: 2px;
+  border: none;
+  max-width: 288px;
+  box-sizing: border-box;
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  &--arrow {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--big {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &--arrow::after {
+
+    display: block;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+  }
+
+  &:hover {
+    text-decoration: none;
+    background-color: @hover;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+}
