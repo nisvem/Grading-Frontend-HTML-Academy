@@ -2,18 +2,45 @@
     max-width: 288px;
     width: 100%;
 
-        
+    @media (min-width: @tablet-width) {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     &__input {
         width: 100%;
+        height: 50px;
         padding: 15px;
         box-sizing: border-box;
-        margin-bottom: 20px;
+
         border: 1px solid @border;
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
         color: @very_dark;
 
+        @media (min-width: @tablet-width) {
+            width: 269px;
+        }
+
+
+    }
+
+    &__btn {
+        width: 100%;
+
+        @media (min-width: @tablet-width) {
+            width: 250px;
+            margin: auto;
+        }
+
+        @media (min-width: @desktop-width) {
+            width: 176px;
+        }
     }
 
     &__input--error {
@@ -23,6 +50,11 @@
 
     &__input-block {
         position: relative;
+        margin-bottom: 20px;
+        
+        @media (min-width: @desktop-width) {
+            margin-bottom: 25px;
+        }
     }
 
     &__input--phone {
@@ -52,11 +84,27 @@
         position: absolute;
         width: 19px;
         height: 20px;
-        top: calc(50% - 21px);
+        top: calc(50% - 10px);
         left: 26px;
         font-size: 14px;
         line-height: 20px;
         color: @very_dark;
 
+    }
+
+    &.form--modal {
+        @media (min-width: @tablet-width) {
+            max-width: 270px;
+
+            & .form__input-block {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            & .form__btn {
+                width: 176px;
+                margin: auto;
+            }
+        }
     }
 }

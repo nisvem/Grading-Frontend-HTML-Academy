@@ -1,6 +1,19 @@
 .corp {
     padding: 30px 0;
 
+    @media (min-width: @tablet-width) {
+        border-top: 1px solid @border;
+        padding: 30px 0 0;
+        width: 100%;
+    }
+
+    @media (min-width: @desktop-width) {
+        padding: 0;
+        margin-left: 55px;
+        border-top: none;
+        width: 320px;
+    }
+
     &__title {
         font-weight: 600;
         font-size: 18px;
@@ -8,6 +21,10 @@
         text-align: center;
         color: @very_dark;
         margin-bottom: 20px;
+
+        @media (min-width: @desktop-width) {
+            text-align: left;
+        }
     }
 
     &__description {
@@ -16,5 +33,9 @@
         line-height: 24px;
         text-align: center;
         color: @lighttext;
+
+        @media (min-width: @desktop-width) {
+            text-align: left;
+        }
     }
 }

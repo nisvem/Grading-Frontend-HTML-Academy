@@ -1,5 +1,25 @@
-.page-footer__wrapper {
-    max-width: 288px;
-    margin: auto;
-    padding-top: 30px;
+.page-footer {
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        
+        max-width: 288px;
+        margin: auto;
+        padding-top: 30px;
+
+        @media (min-width: @tablet-width) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: @tablet-width;
+            padding: 80px 21px 54px;
+            align-items: flex-start;
+        }
+
+        @media (min-width: @desktop-width) {
+            max-width: @desktop-width;
+            flex-wrap: nowrap;
+            padding: 160px 20px 80px;
+        }
+    }
 }

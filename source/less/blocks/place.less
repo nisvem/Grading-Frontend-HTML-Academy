@@ -29,4 +29,48 @@
         height: 100%;
         width: auto;
     }
+
+    @media (min-width: @desktop-width) {
+        position: relative;
+
+        &:hover {
+            &::after  {
+                content: 'смотреть подробнее';
+                width: 266px;
+                height: 77px;
+                letter-spacing: 2px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                text-transform: uppercase;
+                text-align: center;
+                white-space: nowrap;
+                color: @white;
+                padding: 30px 25px;
+                border: 1px solid @border-hover;
+                position: absolute;
+                box-sizing: border-box;
+      
+                top: calc(50% - 77px/2);
+                left: calc(50% - 266px/2);
+                z-index: 3;
+            }
+
+            &::before{
+                content: '';
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: @background_hover;
+                z-index: 2;
+
+            }
+
+    
+        }
+    }
+   
 }

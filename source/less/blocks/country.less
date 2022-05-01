@@ -1,7 +1,10 @@
 .country {
-    display: flex;
+    display: none;
     flex-direction: column;
 
+    &--selected {
+        display: flex;
+    }
 
 
     @media (min-width: @desktop-width) {
@@ -16,11 +19,16 @@
 
         @media (min-width: @tablet-width) {
             padding: 30px 21px 10px;
+            max-width: @tablet-width;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         @media (min-width: @desktop-width) {
             max-width: 370px;
             padding: 0;
+            margin-left: 0;
+            margin-right: 0;
         }
     
 

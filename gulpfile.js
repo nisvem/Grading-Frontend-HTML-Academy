@@ -88,7 +88,7 @@ const sprite = () => {
 
 const copy = (done) => {
   gulp.src([
-    'source/fonts/*.ttf',
+    'source/fonts/*.{woff2,woff}',
     'source/*.ico',
   ], {
     base: 'source'
