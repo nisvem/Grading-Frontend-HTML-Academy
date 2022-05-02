@@ -1,252 +1,247 @@
 .feedback {
-    width: 100%;
-    height: 415px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin-bottom: 65px;
+  width: 100%;
+  height: 415px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 65px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+    height: 596px;
+    margin-bottom: 0;
+  }
+
+  &--greece {
+    background-image: url("../img/feedback_greece-mobile.jpg");
+    background-color: #b8d0e8;
+
+    @supports (background-image: url("../img/feedback_greece-mobile.webp")) {
+      background-image: url("../img/feedback_greece-mobile.webp");
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/feedback_greece-mobile@2x.jpg");
+
+      @supports (background-image: url("../img/feedback_greece-mobile@2x.webp")) {
+        background-image: url("../img/feedback_greece-mobile@2x.webp");
+      }
+    }
 
     @media (min-width: @tablet-width) {
-        margin-bottom: 31px;
+      background-image: url("../img/feedback_greece-tablet.jpg");
+
+      @supports (background-image: url("../img/feedback_greece-tablet.webp")) {
+        background-image: url("../img/feedback_greece-tablet.webp");
+      }
+    }
+
+    @media (min-width: @tablet-width) and (min-resolution: 2dppx) {
+      background-image: url("../img/feedback_greece-tablet@2x.jpg");
+
+      @supports (background-image: url("../img/feedback_greece-tablet@2x.webp")) {
+        background-image: url("../img/feedback_greece-tablet@2x.webp");
+      }
     }
 
     @media (min-width: @desktop-width) {
-        width: 430px;
-        height: 596px;
-        margin-bottom: 0;
-    }  
-    
-    &--greece {
-        background-image: url("../img/feedback_greece-mobile.jpg");
-        background-color: #B8D0E8;
+      background-image: url("../img/feedback_greece-desktop.jpg");
 
-        @supports (background-image: url('../img/feedback_greece-mobile.webp')) {
-            background-image: url('../img/feedback_greece-mobile.webp');
-        }
-
-        @media (min-resolution: 2dppx) {
-            background-image: url("../img/feedback_greece-mobile@2x.jpg");
-
-            @supports (background-image: url('../img/feedback_greece-mobile@2x.webp')) {
-                background-image: url('../img/feedback_greece-mobile@2x.webp');
-            }
-        }
-
-        @media (min-width: @tablet-width) {
-            background-image: url("../img/feedback_greece-tablet.jpg");
-
-            @supports (background-image: url('../img/feedback_greece-tablet.webp')) {
-                background-image: url('../img/feedback_greece-tablet.webp');
-            }
-        }
-
-        @media (min-width: @tablet-width) and (min-resolution: 2dppx) {
-            background-image: url("../img/feedback_greece-tablet@2x.jpg");
-
-            @supports (background-image: url('../img/feedback_greece-tablet@2x.webp')) {
-                background-image: url('../img/feedback_greece-tablet@2x.webp');
-            }
-        }
-    
-        @media (min-width: @desktop-width) {
-            background-image: url("../img/feedback_greece-desktop.jpg");
-
-            @supports (background-image: url('../img/feedback_greece-desktop.webp')) {
-                background-image: url('../img/feedback_greece-desktop.webp');
-            }
-        }  
-    
-        @media (min-width: @desktop-width) and (min-resolution: 2dppx) {
-            background-image: url("../img/feedback_greece-desktop@2x.jpg");
-
-            @supports (background-image: url('../img/feedback_greece-desktop@2x.webp')) {
-                background-image: url('../img/feedback_greece-desktop@2x.webp');
-            }
-        }  
+      @supports (background-image: url("../img/feedback_greece-desktop.webp")) {
+        background-image: url("../img/feedback_greece-desktop.webp");
+      }
     }
 
-    &--albania {
-        background-image: url("../img/feedback_albania.jpg");
-        background-color: #056072;
+    @media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+      background-image: url("../img/feedback_greece-desktop@2x.jpg");
 
-        @supports (background-image: url('../img/feedback_albania.webp')) {
-            background-image: url('../img/feedback_albania.webp');
-        }
+      @supports (background-image: url("../img/feedback_greece-desktop@2x.webp")) {
+        background-image: url("../img/feedback_greece-desktop@2x.webp");
+      }
+    }
+  }
 
-        @media (min-resolution: 2dppx) {
-            background-image: url("../img/feedback_albania@2x.jpg");
+  &--albania {
+    background-image: url("../img/feedback_albania.jpg");
+    background-color: #056072;
 
-            @supports (background-image: url('../img/feedback_albania@2x.webp')) {
-                background-image: url('../img/feedback_albania@2x.webp');
-            }
-        }
+    @supports (background-image: url("../img/feedback_albania.webp")) {
+      background-image: url("../img/feedback_albania.webp");
     }
 
-    &--macedonia {
-        background-image: url("../img/feedback_macedonia.jpg");
-        background-color: #9ECDD5;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/feedback_albania@2x.jpg");
 
-        @supports (background-image: url('../img/feedback_macedonia.webp')) {
-            background-image: url('../img/feedback_macedonia.webp');
-        }
+      @supports (background-image: url("../img/feedback_albania@2x.webp")) {
+        background-image: url("../img/feedback_albania@2x.webp");
+      }
+    }
+  }
 
-        @media (min-resolution: 2dppx) {
-            background-image: url("../img/feedback_macedonia@2x.jpg");
+  &--macedonia {
+    background-image: url("../img/feedback_macedonia.jpg");
+    background-color: #9ecdd5;
 
-            @supports (background-image: url('../img/feedback_macedonia@2x.webp')) {
-                background-image: url('../img/feedback_macedonia@2x.webp');
-            }
-        }
+    @supports (background-image: url("../img/feedback_macedonia.webp")) {
+      background-image: url("../img/feedback_macedonia.webp");
     }
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/feedback_macedonia@2x.jpg");
 
-    &--montenegro {
-        background-image: url("../img/feedback_montenegro.jpg");
-        background-color: #9ECDD5;
+      @supports (background-image: url("../img/feedback_macedonia@2x.webp")) {
+        background-image: url("../img/feedback_macedonia@2x.webp");
+      }
+    }
+  }
 
-        @supports (background-image: url('../img/feedback_montenegro.webp')) {
-            background-image: url('../img/feedback_montenegro.webp');
-        }
+  &--montenegro {
+    background-image: url("../img/feedback_montenegro.jpg");
+    background-color: #9ecdd5;
 
-        @media (min-resolution: 2dppx) {
-            background-image: url("../img/feedback_montenegro@2x.jpg");
-
-            @supports (background-image: url('../img/feedback_montenegro@2x.webp')) {
-                background-image: url('../img/feedback_montenegro@2x.webp');
-            }
-        }
+    @supports (background-image: url("../img/feedback_montenegro.webp")) {
+      background-image: url("../img/feedback_montenegro.webp");
     }
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/feedback_montenegro@2x.jpg");
 
-    &--croatia {
-        background-image: url("../img/feedback_croatia.jpg");
-        background-color: #049BD0;
+      @supports (background-image: url("../img/feedback_montenegro@2x.webp")) {
+        background-image: url("../img/feedback_montenegro@2x.webp");
+      }
+    }
+  }
 
-        @supports (background-image: url('../img/feedback_croatia.webp')) {
-            background-image: url('../img/feedback_croatia.webp');
-        }
+  &--croatia {
+    background-image: url("../img/feedback_croatia.jpg");
+    background-color: #049bd0;
 
-        @media (min-resolution: 2dppx) {
-            background-image: url("../img/feedback_croatia@2x.jpg");
-
-            @supports (background-image: url('../img/feedback_croatia@2x.webp')) {
-                background-image: url('../img/feedback_croatia@2x.webp');
-            }
-        }
+    @supports (background-image: url("../img/feedback_croatia.webp")) {
+      background-image: url("../img/feedback_croatia.webp");
     }
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/feedback_croatia@2x.jpg");
 
-
-    &__block {
-        padding: 30px 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: @white;
-        width: 268px;
-        margin: auto;
-        position: relative;
-        top: 50px;
-
-            
-        @media (min-width: @tablet-width) {
-            width: 382px;
-            padding: 30px;
-            align-items: flex-start;
-            justify-content: center;
-            top: 80px;
-        }
-
-        @media (min-width: @desktop-width) {
-            top: 114px;
-            left: 318px;
-        } 
+      @supports (background-image: url("../img/feedback_croatia@2x.webp")) {
+        background-image: url("../img/feedback_croatia@2x.webp");
+      }
     }
+  }
+}
 
-    &__title {
-        display: block;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-        align-items: center;
-        letter-spacing: -0.691667px;
-        color: @dark;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-        position: relative;
+.feedback__block {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: @white;
+  width: 268px;
+  margin: auto;
+  position: relative;
+  top: 50px;
 
-        &::after {
-            content: '';
-            width: 68px;
-            height: 0.73px;
-            background-color: @main;
-            display: block;
-            position: absolute;
-            bottom: 0;
-            left: calc(50% - 34px);
-        }
+  @media (min-width: @tablet-width) {
+    width: 382px;
+    padding: 30px;
+    align-items: flex-start;
+    justify-content: center;
+    top: 80px;
+  }
 
-        @media (min-width: @tablet-width) {
-            font-size: 30px;
-            line-height: 37px;
+  @media (min-width: @desktop-width) {
+    top: 114px;
+    left: 318px;
+  }
+}
 
-            &::after {
-                left: 0;
-            }
-        }
+.feedback__title {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: -0.69px;
+  color: @dark;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 68px;
+    height: 0.73px;
+    background-color: @main;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 34px);
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+
+    &::after {
+      left: 0;
     }
-    
-    &__text {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 28px;
-        text-align: center;
-        letter-spacing: -0.408333px;
-        color: @text_light;
-        margin-bottom: 20px;
+  }
+}
 
-        @media (min-width: @tablet-width) {
-            font-size: 14px;
-            line-height: 28px;
-            text-align: left;
-            margin-bottom: 35px;
-        }
-    }
+.feedback__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.41px;
+  color: @text_light;
+  margin-bottom: 20px;
 
-    &__autor {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 35px;
+  }
+}
 
-        @media (min-width: @tablet-width) {
-            flex-direction: row;
-        }
-    }
+.feedback__autor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    &__autor-picture {
-        width: 38px;
-        height: 38px;
-        object-fit: contain;
-        margin-bottom: 10px;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
 
-        @media (min-width: @tablet-width) {
-            margin-bottom: 0;
-            margin-right: 15px;
-        }
-    }
+.feedback__autor-picture {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  margin-bottom: 10px;
 
-    &__autor-image {
-        border-radius: 50%;
-        object-fit: contain;
-    }
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
 
-    &__autor-name {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: -0.466667px;
-        color: @dark;
-    }
+.feedback__autor-image {
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.feedback__autor-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.47px;
+  color: @dark;
 }

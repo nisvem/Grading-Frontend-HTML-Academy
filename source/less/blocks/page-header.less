@@ -1,75 +1,71 @@
 .page-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    max-width: @desktop-width;
+    padding: 36px 15px;
+    margin: auto;
+  }
+}
+
+.page-header__phone {
+  display: none;
+
+  @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: space-between;
-    height: 50px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: @very_dark;
+    min-width: 195px;
+    width: 100%;
+    max-width: 230px;
+  }
+}
 
-    @media (min-width: @desktop-width) {
-        width: 100%;
-        max-width: @desktop-width;
-        padding: 36px 15px;
-        margin: auto;
+.page-header__logo {
+  margin-left: 16px;
 
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.page-header__svg {
+  width: 44px;
+  height: 17px;
+
+  @media (min-width: @desktop-width) {
+    width: 52px;
+    height: 22px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .page-header__phone {
+    &:hover {
+      color: @main;
+
+      & path {
+        stroke: @main;
+      }
     }
+  }
 
-    &__phone {
-        display: none;
-    
-        @media (min-width: @desktop-width) {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            align-items: center;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 32px;
-            color: @very_dark;
+  .page-header__phone-svg {
+    margin-right: 10px;
+  }
 
-            min-width: 195px;
-            width: 100%;
-            max-width: 230px;
-            
-            &-svg {
-                margin-right: 10px;
-            }
-            
-            &-svg path {
-                stroke: @very_dark;
-            }
-    
-            &:hover {
-                color: @main;
-    
-                & path {
-                    stroke: @main;
-                }
-       
-            }
-        }
-    }
-
-    &__logo {
-        margin-left: 16px;
-
-
-        @media (min-width: @desktop-width) {
-            margin-left: 0;
-
-        }
-    
-    }
-
-
-    &__svg {
-        width: 44px;
-        height: 17px;
-
-        @media (min-width: @desktop-width) {
-            width: 52px;
-            height: 22px;
-        }
-    }
-
-
+  .page-header__phone-svg path {
+    stroke: @very_dark;
+  }
 }

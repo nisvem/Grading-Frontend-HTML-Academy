@@ -1,62 +1,64 @@
 .countries {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 
-    @media (min-width: @tablet-width) {
-        margin-bottom: 60px;
-    }
+  @media (min-width: @tablet-width) {
+    margin-bottom: 60px;
+  }
 
-    @media (min-width: @desktop-width) {
-        width: @desktop-width;
-        margin: auto;
-    }
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    margin: auto;
+  }
+}
 
-    &__details {
-        @media (min-width: @desktop-width) {
-            padding: 65px 16px 150px;
-        }
-    }
+.countries__details {
+  @media (min-width: @desktop-width) {
+    padding: 65px 16px 150px;
+  }
+}
 
-    &__wrapper {
-        width: 100%;
-        box-sizing: border-box;
-    }
+.countries__wrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
 
-    &__nav-wrapper {
-        width: 100%;
-        overflow-x: scroll;
-        padding: 0 16px;
+.countries__nav-wrapper {
+  width: 100%;
+  overflow-x: scroll;
+  padding: 0 16px;
 
-        &::-webkit-scrollbar {
-            display: none;
-          }
-    }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
 
- 
+.countries__nav-list {
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid @border_light;
+}
 
-    &__nav-list {
-        width: 900px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: space-between;
-        padding: 16px 0;
-        border-bottom: 1px solid @border_light;
-    }
+.countries__btn {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.41px;
+  color: @border_light;
+  outline: none;
+  border: none;
+  background: transparent;
+  text-decoration: none;
 
-    &__btn {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: -0.415px;
-        color: @border_light;
-        outline: none;
-        border: none;
-        background: transparent;
-        text-decoration: none;
+  &:hover {
+    color: @main;
+  }
 
-        &--selected {
-            color: @main;
-        }
-    }
+  &--selected {
+    color: @main;
+  }
 }
