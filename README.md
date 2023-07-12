@@ -15,3 +15,5 @@
 
 - Собрать стили: `npm run styles`
 - Собрать скрипты: `npm run scripts`
+
+node v14.21.3
